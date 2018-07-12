@@ -12,6 +12,8 @@
 		89927F9520F742CB0077052F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89927F9320F742CB0077052F /* Main.storyboard */; };
 		89927F9720F742CE0077052F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89927F9620F742CE0077052F /* Assets.xcassets */; };
 		89927F9A20F742CE0077052F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89927F9820F742CE0077052F /* LaunchScreen.storyboard */; };
+		89927FC020F749D50077052F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89927FBF20F749D50077052F /* ListViewController.swift */; };
+		89927FC220F749E50077052F /* EditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89927FC120F749E50077052F /* EditController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		89927F9620F742CE0077052F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89927F9920F742CE0077052F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89927F9B20F742CE0077052F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89927FBF20F749D50077052F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		89927FC120F749E50077052F /* EditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				89927F9620F742CE0077052F /* Assets.xcassets */,
 				89927F9820F742CE0077052F /* LaunchScreen.storyboard */,
 				89927F9B20F742CE0077052F /* Info.plist */,
+				89927FBF20F749D50077052F /* ListViewController.swift */,
+				89927FC120F749E50077052F /* EditController.swift */,
 			);
 			path = MGTodoApp;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				89927F9220F742CB0077052F /* ViewController.swift in Sources */,
+				89927FC220F749E50077052F /* EditController.swift in Sources */,
 				89927F9020F742CB0077052F /* AppDelegate.swift in Sources */,
+				89927FC020F749D50077052F /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
