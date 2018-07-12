@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MGTodoApp
 //
-//  Created by 黃俊傑 on 2018/7/12.
+//  Created by Jason on 2018/7/12.
 //  Copyright © 2018年 Soui. All rights reserved.
 //
 
