@@ -66,6 +66,29 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return false
     }
     
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        
+        if let tabBar = self.tabBarController {
+            
+            if let editController = tabBar.viewControllers?[1] as? EditController {
+                
+                if let inputText = editController.myInputText {
+                    inputText.text = todoList[indexPath.row]
+                }
+                
+                if let button = editController.myButton {
+                    button.setTitle("OK", for: UIControlState.normal)
+                }
+                
+                editController.isEdit = true
+            }
+            
+            tabBar.selectedIndex = 1
+        }
+        
+       
+    }
+    
     /*
      // MARK: - Navigation
      

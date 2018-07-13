@@ -18,6 +18,13 @@ class TabBarViewController: UITabBarController {
         super.didReceiveMemoryWarning()
     }
     
-
+    
+//
+//    shouldSelect
+//
+//    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+//        print("the selected index is : \(selectedIndex)")
+//    }
+//    viewcontroller
 
 }

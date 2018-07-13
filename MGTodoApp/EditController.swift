@@ -14,6 +14,8 @@ class EditController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var myInputText: UITextField!
     
+    var isEdit: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myInputText.becomeFirstResponder()
