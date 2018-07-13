@@ -59,6 +59,9 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="0.045561879690751872" blue="0.3895723887059539" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="doSubmitAction:" destination="icu-wd-ith" eventType="touchUpInside" id="fla-en-W07"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2kL-Bh-mXz">
                                 <rect key="frame" x="62.5" y="175" width="250" height="30"/>
@@ -69,6 +72,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onInputTextChange:" destination="icu-wd-ith" eventType="editingChanged" id="WEa-SQ-Chg"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.99526142942175977" green="1" blue="0.9615443523027376" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -86,6 +92,10 @@
                         <viewLayoutGuide key="safeArea" id="meS-I9-AUZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ADD" image="Add" selectedImage="Add" id="pwk-RT-E2y"/>
+                    <connections>
+                        <outlet property="myButton" destination="pB9-B1-KN3" id="Jeo-OS-iix"/>
+                        <outlet property="myInputText" destination="2kL-Bh-mXz" id="QIf-8C-tQE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Vl-X0-tAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,17 +129,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hp8-52-wQJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hp8-52-wQJ">
                                 <rect key="frame" x="0.0" y="135" width="375" height="483"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" id="xGl-6Y-YEl">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" id="xGl-6Y-YEl">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xGl-6Y-YEl" id="DCg-kQ-ld7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -156,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="780" y="-546.47676161919048"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="Sin-jY-Ki2">
             <objects>
-                <tabBarController id="TPd-6D-IAF" sceneMemberID="viewController">
+                <tabBarController id="TPd-6D-IAF" customClass="TabBarViewController" customModule="MGTodoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tig-pp-bhG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

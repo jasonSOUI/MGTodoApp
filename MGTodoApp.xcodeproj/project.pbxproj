@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		894CA3D320F834EA00BC18AE /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894CA3D220F834EA00BC18AE /* TabBarViewController.swift */; };
 		89927F9020F742CB0077052F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89927F8F20F742CB0077052F /* AppDelegate.swift */; };
 		89927F9220F742CB0077052F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89927F9120F742CB0077052F /* ViewController.swift */; };
 		89927F9520F742CB0077052F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89927F9320F742CB0077052F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		894CA3D220F834EA00BC18AE /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		89927F8C20F742CB0077052F /* MGTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89927F8F20F742CB0077052F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89927F9120F742CB0077052F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				89927F9B20F742CE0077052F /* Info.plist */,
 				89927FBF20F749D50077052F /* ListViewController.swift */,
 				89927FC120F749E50077052F /* EditController.swift */,
+				894CA3D220F834EA00BC18AE /* TabBarViewController.swift */,
 			);
 			path = MGTodoApp;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				89927F9220F742CB0077052F /* ViewController.swift in Sources */,
 				89927FC220F749E50077052F /* EditController.swift in Sources */,
 				89927F9020F742CB0077052F /* AppDelegate.swift in Sources */,
+				894CA3D320F834EA00BC18AE /* TabBarViewController.swift in Sources */,
 				89927FC020F749D50077052F /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
